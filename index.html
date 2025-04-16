@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7fd6ff22b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Quotify</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+        <div class="form">
+            <input type="text" id="songTitle" placeholder="Enter song title" required>
+            <input type="text" id="artistName" placeholder="Enter your name" required>
+            <textarea id="lyricLine" placeholder="Enter your Quote/Lyric"></textarea>
+            <input type="color" id="bgColorPicker" value="#7f5af0">
+            <input type="file" id="albumImageInput" accept="image/*">
+            <button onclick="downloadImage()">Download Image</button>
+        </div>
+
+        <div class="preview" id="previewBox">
+            <div class="tile" id="tile">
+                <div class="top">
+                    <img id="albumImage" src="" alt="Album Art">
+                    <div>
+                        <div class="previewTitle" id="previewTitle">Song Title</div>
+                        <div class="previewArtist" id="previewArtist">Artist Name</div>
+                    </div>
+                </div>
+
+                <div class="lyrics" id="previewLyrics">Your Quote/Lyric here</div>
+                <div id="footer"> <i class="fa-solid fa-q"></i>uotify</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h1> <i class="fa-solid fa-q"></i> Quotify</h1>
+        <p>made by <span><a href="https://www.instagram.com/_mohitog_/" id="insta">~Mohit</a></span>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
